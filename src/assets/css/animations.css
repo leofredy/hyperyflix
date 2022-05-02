@@ -1,0 +1,14 @@
+.fadeTop-enter-from,
+.fadeTop-leave-to {
+  opacity: 0;
+  transform: translate3d(0px, -15px, 0px);
+}
+.fadeTop-enter-to,
+.fadeTop-leave-from {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+.fadeTop-enter-active,
+.fadeTop-leave-active {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
