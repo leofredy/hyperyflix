@@ -1,5 +1,5 @@
 # HYPERYFLIX
-Esse projeto é uma listagem de filmes em tendência utilizando a API: 
+Neste projeto foi desenvolvida uma listagem de filmes em tendência, os dados dos filmes foram consumidos da [API TheMovie](https://developers.themoviedb.org/3/trending/get-trending).
 
 ## Instalando dependências.
 ```bash
@@ -16,7 +16,7 @@ Vuejs 3
 npm run serve
 ```
 
-### Páginas que Compõem o projeto
+### Páginas que compõem o projeto
 ```bash
  - Trend: lista de filmes em tendência. Essa página pode ser acessado por "/" ou "/trend" através de um redirect configurado no vue router.
  - NotFound: página de erro 404 quando navegado para uma rota não existente
