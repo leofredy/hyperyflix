@@ -8,6 +8,8 @@
         {{ value || label }}
       </p>
       <img 
+        width="12"
+        height="9"
         :class="{'openOptions': showOptions}" 
         src="@/assets/icons/arrow.svg" 
         alt=""

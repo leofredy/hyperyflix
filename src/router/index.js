@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import TrendView from "../views/TrendView.vue";
-import NotFoundView from "../views/NotFoundView.vue";
 
 const routes = [
   {
@@ -16,13 +15,19 @@ const routes = [
   {
     path: "/:pathMatch(.*)*",
     name: "NotFoundView",
-    component: NotFoundView,
+    component: () => import(/* webpackChunkName: "NotFoundView" */ "@/views/NotFoundView.vue"),
   }
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior() {
+    return { 
+      top: 0,
+      behavior: "smooth",
+    }
+  },
 });
 
 export default router;

@@ -7,6 +7,7 @@
 
 :root {
   --primary-color: #E50914;
+  --primary-dark-color: #EC2E38;
   --primary-background: #121212;
   --secondary-background: #1E1E1E;
   --tertiary-background: #4B4B4B;
@@ -20,7 +21,7 @@
 }
 
 .row {
-  max-width: 1443px;
+  max-width: 1415px;
   width: 100%;
   margin: 0 auto;
 }
@@ -30,13 +31,18 @@
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 600;
   color: var(--text-primary);
 }
 
 h3 {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
   color:  var(--text-primary);
 }
 
@@ -53,10 +59,33 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  list-style: none;
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
   .column {
     padding: 0 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3,
+  p {
+    font-size: 14px;
   }
 }

@@ -12,3 +12,14 @@
 .fadeTop-leave-active {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+
+@keyframes fadeSkeleton {
+  0% {
+    opacity: 15%;
+  }
+  100% {
+    opacity: 95%;
+  }
+
+}
