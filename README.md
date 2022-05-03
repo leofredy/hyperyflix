@@ -29,5 +29,6 @@ npm run serve
     - Paginação: com range de 5 páginas em desktop e 3 páginas no mobile, possui também botão de próxima página e botão para ultima página.
     - Tempo da tendência: possui um select para escolher qual o tempo da tendência que você quer visualizar, as opções são: semana ("week") ou dia ("day"). Essa feature é implementada em conjunto com o router através de para melhor navegabilidade no historico do usuário. 
  - Projeto mobile first: o projeto foi desenvolvido em mobile first para garantir uma melhor performance cumprindo a metrica CLS estabelecida pelo pagespeed.
+ - Componentes sob demanda: o componente footer e a página NotFound foi importada sob demanda para garantir um menor consumo de banda para usuários mobile.
 ```
 
